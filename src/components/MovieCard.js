@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { addFavorite, deleteFavorite } from "../features/favorites/favoritesSlice";
+import { Link } from 'react-router-dom';
 
 function MovieCard({ movie }) {
   const favoriteItems = useSelector( (state) => state.favorite.items);
@@ -15,6 +16,7 @@ function MovieCard({ movie }) {
       {inFavorites(movie.id, favoriteItems) === true ?
           <button onClick={() => dispatch(deleteFavorite(movie))}>Remove from Favorites</button> : 
           <button onClick={() => dispatch(addFavorite(movie))}>Add to Favorites</button>}
+    <Link to={`/movie/${movie.id}`}>More Info</Link>
     </div>
   )
 }
