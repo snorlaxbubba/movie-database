@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Components
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Nav from '../components/Nav';
 
 import PageHome from '../pages/PageHome';
 import PageTrending from '../pages/PageTrending';
@@ -21,12 +22,14 @@ function AppRouter() {
         <BrowserRouter>
             <div className="main-wrapper">
             <Header />
+            <Nav />
                 <Routes>
                     <Route path="/" element={<PageHome sort='popular' />} />
                     <Route path="/sort/popular" element={<PageHome sort='popular' />} />
                     <Route path="/sort/top-rated" element={<PageHome sort='top_rated' />} />
                     <Route path="/sort/now-playing" element={<PageHome sort='now_playing' />} />
                     <Route path="/sort/upcoming" element={<PageHome sort='upcoming' />} />
+                    <Route path="/trending" element={<PageTrending sort='all' />} />
                     <Route path="/trending/all" element={<PageTrending sort='all' />} />
                     <Route path="/trending/tv" element={<PageTrending sort='tv' />} />
                     <Route path="/trending/movies" element={<PageTrending sort='movie' />} />
@@ -38,6 +41,7 @@ function AppRouter() {
                     <Route path="/cast/:id" element={<PageSingleCast />} />
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
+                <Footer />
             </div>
         </BrowserRouter>
     </div>
