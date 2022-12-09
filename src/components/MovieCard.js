@@ -1,6 +1,8 @@
-function MovieCard() {
+function MovieCard({ movie }) {
   return (
-    <div>MovieCard</div>
+    <div>
+      <h2>{movie.title}</h2>
+    </div>
   )
 }
 export default MovieCard
