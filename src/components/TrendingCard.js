@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { addFavorite, deleteFavorite } from "../features/favorites/favoritesSlice";
 
+
 function TrendingCard({trending}) {
 
     const favoriteItems = useSelector( (state) => state.favorite.items );
@@ -19,6 +20,7 @@ function TrendingCard({trending}) {
         {inFavorites(trending.id, favoriteItems) === true ?
           <button onClick={() => dispatch(deleteFavorite(trending))}>Remove from Favorites</button> : 
           <button onClick={() => dispatch(addFavorite(trending))}>Add to Favorites</button>}
+
     </div>
   )
 }
