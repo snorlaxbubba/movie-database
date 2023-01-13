@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
+import BackgroundBubbles from "../components/BackgroundBubbles";
 
 import PageHome from '../pages/PageHome';
 import PageTrending from '../pages/PageTrending';
@@ -24,6 +25,7 @@ function AppRouter() {
     <div>
         <BrowserRouter>
             <div className="main-wrapper">
+            <BackgroundBubbles />
             <Header />
             <Nav />
                 <Routes>

@@ -1,0 +1,23 @@
+.main-movie {
+    margin-bottom: 4rem;
+    margin: 2rem auto;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    h2{
+        color: black;
+        max-width: 15rem;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+.movie-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.movie-image {
+    max-width: 17rem;
+}
