@@ -1,0 +1,163 @@
+@import 'variables';
+
+
+
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    background: fixed;
+}
+
+.bubbles {
+
+    z-index: -55;
+    position: relative;
+    display: flex;
+
+    span {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: $bubbleOne;
+        margin: 0 4px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px #4fc3dc44, 
+        0 0 50px $bubbleOne,
+        0 0 100px $bubbleOne;
+        animation: animate 15s linear infinite;
+    }
+    .one {
+        animation-duration: calc(325s / 11);
+    }
+    .two{
+        animation-duration: calc(325s / 12);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .three 
+    {
+        animation-duration: calc(325s / 24);
+    }
+    .four{
+        animation-duration: calc(325s / 10);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .five{
+        animation-duration: calc(325s / 14);
+    }
+    .six{
+        animation-duration: calc(325s / 23);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .seven{
+        animation-duration: calc(325s / 18);
+    }
+    .eight{
+        animation-duration: calc(325s / 16);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .nine{
+        animation-duration: calc(325s / 19);
+    }
+    .ten{
+        animation-duration: calc(325s / 20);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .eleven{
+        animation-duration: calc(325s / 22);
+    }
+    .twelve{
+        animation-duration: calc(325s / 25);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .thirteen{
+        animation-duration: calc(325s / 18);
+    }
+    .fourteen{
+        animation-duration: calc(325s / 21);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .fifteen{
+        animation-duration: calc(325s / 15);
+    }
+    .sixteen{
+        animation-duration: calc(325s / 13);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .seventeen{
+        animation-duration: calc(325s / 26);
+    }
+    .eighteen{
+        animation-duration: calc(325s / 17);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .nineteen{
+        animation-duration: calc(325s / 13);
+    }
+    .twenty{
+        animation-duration: calc(325s / 28);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    .twentyone{
+        animation-duration: calc(325s / 32);
+    }
+    .twentytwo{
+        animation-duration: calc(325s / 10);
+        background: $bubbleTwo;
+        box-shadow: 0 0 0 10px #ff2d7544, 
+        0 0 50px $bubbleTwo,
+        0 0 100px $bubbleTwo;
+    }
+    // span:nth-child(even) {
+    //     background: $bubbleTwo;
+        // box-shadow: 0 0 0 10px #ff2d7544, 
+        // 0 0 50px $bubbleTwo,
+        // 0 0 100px $bubbleTwo;
+    //     animation: animate 15s linear infinite;
+    // }
+
+
+}
+
+
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(300vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
