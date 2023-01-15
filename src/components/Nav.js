@@ -1,15 +1,11 @@
 import { NavLink } from "react-router-dom"
-
+//comment
 function Nav() {
   return (
     <nav className="nav">
       <ul>
         <li>
           <NavLink to='/' className="favorites-button">Home</NavLink>
-        </li>
-
-        <li>
-          <NavLink to='/trending' className="favorites-button">Trending</NavLink>
         </li>
 
         <li>
