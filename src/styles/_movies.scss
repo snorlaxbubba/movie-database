@@ -1,23 +1,62 @@
 .main-movie {
+    max-width: 19rem;
     margin-bottom: 4rem;
     margin: 2rem auto;
-
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
+    p {
+        color: black;
+    }
+
     h2{
         color: black;
-        max-width: 15rem;
+        max-width: 20rem;
         text-align: center;
-        padding: 2rem;
+        padding: 0 3em;
     }
 }
 .movie-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: space-between;
+
 
 }
 .movie-image {
     max-width: 17rem;
+    margin-left: 1rem;
+}
+
+.movie-bracket{
+    margin-left: 2.45rem;
+}
+
+.more-info {
+    padding-left: 0.15rem;
+}
+
+.overview {
+    margin-top: -0.5rem;
+    font-size: 1.5em;
+    padding: 0 1rem;
+    max-width: 20rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.movie-rating-release {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 0 1.15rem;
+}
+
+.more-info-link {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
 }

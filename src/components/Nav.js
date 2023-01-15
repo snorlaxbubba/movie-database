@@ -2,22 +2,22 @@ import { NavLink } from "react-router-dom"
 
 function Nav() {
   return (
-    <nav>
+    <nav className="nav">
       <ul>
         <li>
-          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/' className="favorites-button">Home</NavLink>
         </li>
 
         <li>
-          <NavLink to='/trending'>Trending</NavLink>
+          <NavLink to='/trending' className="favorites-button">Trending</NavLink>
         </li>
 
         <li>
-          <NavLink to='/about'>About</NavLink>
+          <NavLink to='/about' className="favorites-button">About</NavLink>
         </li>
 
         <li>
-          <NavLink to='/favorites'>Favorites</NavLink>
+          <NavLink to='/favorites' className="favorites-button">Favorites</NavLink>
         </li>
 
       </ul>
