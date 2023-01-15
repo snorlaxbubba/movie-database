@@ -9,10 +9,6 @@ function Nav() {
         </li>
 
         <li>
-          <NavLink to='/trending' className="favorites-button">Trending</NavLink>
-        </li>
-
-        <li>
           <NavLink to='/about' className="favorites-button">About</NavLink>
         </li>
 
